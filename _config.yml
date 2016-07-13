@@ -6,16 +6,19 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Golden Dragon Property Investment
+email: contact@goldendragon.property
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Golden Dragon Property Investment are creating local jobs for the future in
+  Brisbane, Gold Coast, Laidley, Plainlands, Gatton, Toowoomba, Highfields
+keywords: >
+  Golden Dragon, Property, Investment, local jobs, local, jobs, brisbane,
+  gold coast, laidley, plainlands, gatton, toowoomba, highfields
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://goldendragon.property" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - octopress-autoprefixer
