@@ -11,6 +11,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+
+  @include media-query($on-palm) {
+    display: none;
+  }
 }
 
 .site-services {
@@ -62,6 +66,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+
+  @include media-query($on-palm) {
+    height: 200px;
+  }
 }
 
 .site-cta {
