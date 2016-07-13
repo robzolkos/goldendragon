@@ -1,0 +1,146 @@
+.site-logo {
+  padding: $spacing-unit;
+
+  @include media-query($on-palm) {
+    text-align: center;
+  }
+}
+
+.site-highrise {
+  background-image: url('../images/highrise.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.site-services {
+  background-color: rgba($background-color, 0.6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $spacing-unit;
+
+  @include media-query($on-laptop) {
+    padding: $spacing-unit / 2;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 1em;
+
+    @include media-query($on-palm) {
+      padding-left: 0;
+    }
+  }
+
+  li {
+    color: $brand-color;
+    letter-spacing: 4px;
+    line-height: 3;
+    text-transform: uppercase;
+
+    @include media-query($on-palm) {
+      text-align: center;
+    }
+
+    &:before {
+      content: "-";
+      display: inline-block;
+      margin-left: -1em;
+      width: 1em;
+
+      @include media-query($on-palm) {
+        display: none;
+      }
+    }
+  }
+}
+
+.site-glass-building {
+  background-image: url('../images/glass-building.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.site-cta {
+  padding: $spacing-unit;
+
+  @include media-query($on-laptop) {
+    padding: $spacing-unit / 2;
+  }
+}
+
+.site-cta-inner {
+  border: 1px solid $brand-color;
+  padding: $spacing-unit / 2;
+  text-align: center;
+
+  h3 {
+    letter-spacing: 10px;
+    line-height: 2.5;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}
+
+.site-footer-top {
+  background: rgba(#f1f1f1, 0.1);
+  padding: $spacing-unit ($spacing-unit * 2);
+
+  @include media-query($on-laptop) {
+    padding: $spacing-unit / 2;
+  }
+}
+
+.site-footer-top-inner {
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
+  padding: $spacing-unit;
+
+  @include media-query($on-laptop) {
+    padding: $spacing-unit / 2;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    letter-spacing: 4px;
+    line-height: 3;
+    text-transform: uppercase;
+
+    &.spacer:after {
+      content: '-';
+      padding: 0 0.5em;
+    }
+  }
+
+  li.spacer:after {
+    @include media-query($on-laptop) {
+      display: none;
+    }
+  }
+
+  br {
+    @include media-query($on-laptop) {
+      display: none;
+    }
+  }
+}
+
+.site-footer-bottom {
+  font-size: 0.85em;
+  padding: $spacing-unit;
+  text-align: center;
+
+  @include media-query($on-laptop) {
+    padding: $spacing-unit / 2;
+  }
+}
+
