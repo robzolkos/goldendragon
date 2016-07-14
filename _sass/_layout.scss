@@ -10,7 +10,6 @@
   background-image: url('../images/highrise.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
 
   @include media-query($on-palm) {
     display: none;
@@ -65,7 +64,6 @@
   background-image: url('../images/glass-building.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
 
   @include media-query($on-palm) {
     height: 200px;
